@@ -1,5 +1,5 @@
 # Uncomment the imports below before you add the function code
-# import requests
+import requests
 import os
 from dotenv import load_dotenv
 
@@ -40,7 +40,7 @@ def analyze_review_sentiments(text):
         return response.json()
     except Exception as err:
         print(f"Unexpected {err=}, {type(err)=}")
-        print("Network exception occurred")git
+        print("Network exception occurred")
 
 # def post_review(data_dict):
 def post_review(data_dict):
