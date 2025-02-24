@@ -1,4 +1,3 @@
-/*jshint esversion: 8 */
 /*jshint esversion: 6 */
 const express = require('express');
 const mongoose = require('mongoose');
@@ -32,7 +31,7 @@ try {
   res.status(500).json({ error: 'Error fetching documents' });
 }
 
-
+/*jshint esversion: 8 */
 // Express route to home
 app.get('/', async (req, res) => {
     res.send("Welcome to the Mongoose API");
